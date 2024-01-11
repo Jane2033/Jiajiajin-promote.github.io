@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./src/img/logoicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>隨時隨地，簡單預約</title>
+    <title>下載家家淨清潔坊App｜隨時隨地，簡單預約</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <header id="navbar">
       <img src="./src/img/logo.svg">
       <ul>
@@ -14,18 +15,19 @@
         <li>關於家家淨</li>
         <li>所有服務</li>
       </ul>
+      <span class="material-symbols-outlined text-2xl lg:hidden">menu</span>
     </header>
-    <div class="hero h-screen flex">
-      <div class="hero-left w-1/2 h-full flex flex-col justify-center">
-        <div class="hero-content w-full">
-          <h5 class="shop-name text-primary">家家淨清潔坊</h5>
-          <h2 class="hero-title text-primary my-6">你的低敏生活行動管家</h2>
-          <p class="intro-text text-on-surface">立即下載家家淨清潔坊專屬App，簡單三步驟輕鬆預約清潔服務。</p>
+    <div class="hero h-screen flex overflow-x-hidden">
+      <div class="hero-left w-full lg:w-1/2 h-full flex flex-col justify-center items-center">
+        <div class="hero-content w-full flex flex-col items-center lg:items-start">
+          <h5 class="shop-name text-primary text-center">家家淨清潔坊</h5>
+          <h2 class="hero-title text-primary my-6 text-center">你的低敏生活行動管家</h2>
+          <p class="intro-text text-on-surface text-center">立即下載家家淨清潔坊專屬App，簡單三步驟輕鬆預約清潔服務。</p>
         </div>
         <div class="cta mt-12" alt="前往google play下載應用程式">
           <img src="./src/img/googleplay.svg">
         </div>
-        <div class="reservestep flex justify-end items-center w-full mt-24">
+        <div class="reservestep hidden lg:flex justify-end items-center w-full mt-24">
           <div class="choosetime mr-5">
             <img src="./src/img/choosetime.svg">
           </div>
@@ -37,33 +39,31 @@
           </div>
         </div>
       </div>
-      <div class="hero-right w-1/2 h-full relative">
-        <div class="w-full h-full flex justify-center items-center">
-          <div class="w-full flex justify-center items-center">
-            <div class="flex justify-between absolute z-30 w-full">
-              <img src="./src/img/完成預約.svg" class="">
-              <img src="./src/img/產品資訊.svg" class="">
-            </div>
-            <img src="./src/img/手機.svg" class="absolute z-20">
+      <div class="hero-right w-1/2 h-full hidden lg:flex justify-center lg:items-center relative">
+        <div class="w-full flex justify-center items-center">
+          <div class="flex justify-between absolute z-30 w-full">
+            <img src="./src/img/完成預約.svg" class="">
+            <img src="./src/img/產品資訊.svg" class="">
           </div>
-          <img src="./src/img/手機背景圖.svg" class="absolute z-10">
+          <img src="./src/img/手機.svg" class="absolute z-20">
         </div>
+        <img src="./src/img/手機背景圖.svg" class="absolute z-10">
       </div>
-      <div class="hero-line absolute right-0">
+      <div class="hero-line absolute right-0 hidden lg:flex">
         <img src="./src/img/細線.svg">
       </div>
     </div>
-    <div class="benefit w-full h-300vh flex">
-      <div class="benefit-left w-1/2 h-screen flex flex-col justify-center items-center bg-primary">
+    <div class="benefit w-full h-300vh flex overflow-x-hidden">
+      <div class="benefit-left w-1/2 h-screen hidden lg:flex flex-col justify-center items-center bg-primary">
         <img src="./src/img/app首頁.png" class="h-2/3">
         <img src="./src/img/googleplay.svg">
       </div>
-      <div class="w-1/2">
+      <div class="w-full lg:w-1/2">
         <div class="benefit-right benefit-right-1 bg-primary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/行走的人.svg">
+            <img src="./src/img/行走的人.svg" class="p-4 h-3/5">
             <div>
-              <h3 class="my-6">隨時隨地，簡單預約</h3>
+              <h3 class="lg:my-6">隨時隨地，簡單預約</h3>
               <p>無論身在何處，隨時都能享受方便快捷的預約體驗，輕鬆預約我們的服務。</p>
             </div>
           </div>
@@ -71,9 +71,9 @@
         </div>
         <div class="benefit-right benefit-right-2 bg-secondary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/集點優惠.svg">
+            <img src="./src/img/集點優惠.svg" class="p-4 h-3/5">
             <div>
-              <h3 class="my-6">集點拿優惠，預約服務更超值</h3>
+              <h3 class="lg:my-6">集點拿優惠，預約服務更超值</h3>
               <p>專屬於你的數位會員卡，集點解鎖會員專屬優惠，豐富折扣與好禮等你拿。</p>
             </div>
           </div>
@@ -81,9 +81,9 @@
         </div>
         <div class="benefit-right benefit-right-3 bg-tertiary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/預約成功.svg">
+            <img src="./src/img/預約成功.svg" class="p-4 h-3/5">
             <div class="">
-              <h3 class="my-6">建立清潔計畫，輕鬆對抗塵蟎過敏</h3>
+              <h3 class="lg:my-6">建立清潔計畫，輕鬆對抗塵蟎過敏</h3>
               <p>專業清潔人員定期到府服務，輕鬆改善過敏症狀，讓家人生活更舒適健康。</p>
             </div>
           </div>
@@ -91,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="about w-full h-200vh relative">
+    <div class="about w-full h-200vh relative block overflow-x-hidden">
       <div class="absolute top-0 w-full h-1/2">
         <div class="about-video w-full h-full flex justify-center items-start relative">
           <div class="w-full h-full bg-gradient-to-t from-black to-black/0 absolute z-10"></div>
@@ -99,28 +99,28 @@
         </div>
       </div>
       <div class="about-content w-full absolute z-30">
-        <div class="about-shop w-full h-full text-white mx-24 my-48 flex flex-col justify-center items-start">
+        <div class="about-shop h-full text-white mx-6 lg:mx-24 my-24 lg:my-48 flex flex-col justify-center items-start">
           <h2>關於家家淨</h2>
-          <p class="mt-9">同是過敏一族的我們，在與塵螨過敏原搏鬥多年後，創立了家家淨清潔坊！為顧客解決居家清潔問題是我們的使命，顧客熱心的反饋是我們前進的動力。</p>
+          <p class="mt-9 p-4">同是過敏一族的我們，在與塵螨過敏原搏鬥多年後，創立了家家淨清潔坊！為顧客解決居家清潔問題是我們的使命，顧客熱心的反饋是我們前進的動力。</p>
         </div>
-        <div class="about-service mx-24">
-          <div class="service w-full p-14 bg-white rounded-3xl relative overflow-hidden">
-            <div class="mite w-full flex">
+        <div class="about-service mx-6 lg:mx-24">
+          <div class="service w-full p-7 lg:p-14 bg-white rounded-3xl relative overflow-hidden">
+            <div class="mite w-full block lg:flex">
               <div class="w-full">
                 <video src="./src/img/深層除蟎.mov" autoplay muted loop class="w-full h-full object-cover"></video>
               </div>
-              <div class="bg-primary text-white flex flex-col justify-center items-start p-12">
+              <div class="bg-primary text-white flex flex-col justify-center items-start p-6 lg:p-12">
                 <h5>專業深層除蟎</h5>
                 <p class="mt-6">使用強力拍打除蟎機，深層拍打約15公分深，吸出縫隙間的灰塵、塵蟎屍體與排泄物。專業水濾式除蟎，過程中不二次污染室內空氣，還能清淨空氣。</p>
               </div>
             </div>
-            <div class="clean w-full flex">
-              <div class="bg-secondary text-black flex flex-col justify-center items-start p-12">
-                <h5>酵素精油清洗</h5>
-                <p class="mt-6">不使用化學藥劑，以酵素溶解污漬，精油水搭配強力抽吸機反覆抽洗，清洗床墊單面約3～5公分深的細菌、黴菌、汙漬。</p>
-              </div>
+            <div class="clean w-full block lg:flex lg:flex-row-reverse">
               <div class="w-full">
                 <video src="./src/img/精油清洗.mov" autoplay muted loop class="w-full h-full object-cover"></video>
+              </div>
+              <div class="bg-secondary text-black flex flex-col justify-center items-start p-6 lg:p-12">
+                <h5>酵素精油清洗</h5>
+                <p class="mt-6">不使用化學藥劑，以酵素溶解污漬，精油水搭配強力抽吸機反覆抽洗，清洗床墊單面約3～5公分深的細菌、黴菌、汙漬。</p>
               </div>
             </div>
             <h2 class="service-outline-1 lg:block hidden">✦CLEAN LIVING SIMPLIFIED✦CLEAN LIVING SIMPLIFIED</h2>
@@ -131,31 +131,40 @@
         </div>
       </div>
     </div>
-    <div class="w-full bg-primary text-white pt-20 pb-9">
-      <div class="info w-full flex justify-between items-start">
-        <div class="w-1/3 mx-20">
-          <img src="./src/img/logo-white.svg" alt="家家淨logo" class="">
-        </div>
-        <div class="about-us w-1/3 mx-20">
-          <p><strong>聯絡我們</strong></p>
-          <div class="mt-9">
-            <p>地址：高雄市岡山區協和路41號</p>
-            <p>電話：07-1234567</p>
-            <p>營業時間：週一～週日，09：00～21：00</p>
-          </div>
-        </div>
-        <div class="follow-us w-1/3 mx-20">
-          <p><strong>追蹤我們</strong></p>
-          <div class="flex w-full mt-9">
-            <img src="./src/img/fb粉絲專頁qrcode.jpg" alt="fb粉絲專頁qrcode" class="mr-12" width="120px" height="120px">
-            <img src="./src/img/line官方帳號qrcode.jpg" alt="line官方帳號qrcode" class="" width="120px" height="120px">
-          </div>
-        </div>
-      </div>
-      <div class="copyright w-full flex justify-center items-center mt-24">
-        <span>家家淨清潔坊 版權所有 © Copyright 2020.All Rights Reserved.</span>
+    <div class="cta w-full overflow-x-hidden">
+      <div class="relative mx-6 my-24 lg:mx-48">
+        <div class="bg-black w-full h-full rounded-full translate-y-5 translate-x-5 absolute -z-10"></div>
+        <div class="flex flex-col lg:flex-row justify-center items-center py-6 lg:my-40 rounded-full bg-gradient-to-r from-primary-container via-tertiary-container to-secondary-container">
+          <h3 class="mx-12 my-2">立即下載App</h3>
+          <img class="mx-12 my-2" src="./src/img/googleplay.svg" alt="前往下載App">
+        </div>        
       </div>
     </div>
+    <footer class="w-full bg-primary text-white pt-20 pb-9 px-6 lg:px-20 overflow-x-hidden">
+      <div class="info block lg:flex justify-between items-start">
+        <div class="lg:w-1/3">
+          <img src="./src/img/logo-white.svg" alt="家家淨logo" class="w-1/2">
+        </div>
+        <div class="about-us lg:w-1/3 mt-9 lg:mt-0 lg:mx-20">
+          <p><strong>聯絡我們</strong></p>
+          <div class="mt-4 lg:mt-9">
+            <p><strong>地址：</strong>高雄市岡山區</p>
+            <p class="py-1"><strong>電話：</strong>07-1234567</p>
+            <p><strong>營業時間：</strong>週一～週日，09：00～21：00</p>
+          </div>
+        </div>
+        <div class="follow-us lg:w-1/3 mt-9 lg:mt-0 lg:mx-20">
+          <p><strong>追蹤我們</strong></p>
+          <div class="block md:flex mt-4 lg:mt-9">
+            <img src="./src/img/fb粉絲專頁qrcode.jpg" alt="fb粉絲專頁qrcode" class="my-2 md:m-2" width="120px" height="120px">
+            <img src="./src/img/line官方帳號qrcode.jpg" alt="line官方帳號qrcode" class="my-2 md:m-2" width="120px" height="120px">
+          </div>
+        </div>
+      </div>
+      <div class="copyright block lg:flex justify-center items-center lg:mx-20 mt-24">
+        <span class="text-center">家家淨清潔坊 版權所有 © Copyright 2020.All Rights Reserved.</span>
+      </div>
+    </footer>
 
 
 
@@ -163,6 +172,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script type="module" src="./src/main.js"></script>
-    <script src="./src/app.js"></script>
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>
