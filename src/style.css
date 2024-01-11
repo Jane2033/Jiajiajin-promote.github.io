@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*字體樣式*/
+
+h1{
+  @apply text-6xl font-light tracking-tight;
+}
+
+h2{
+  @apply text-5xl font-light tracking-normal;
+}
+
+h3{
+  @apply text-4xl font-normal tracking-normal;
+}
+
+h4{
+  @apply text-3xl font-normal tracking-normal;
+}
+
+h5{
+  @apply text-2xl font-normal tracking-normal;
+}
+
+h6{
+  @apply text-xl font-normal tracking-normal;
+}
+
+p{
+  @apply text-base font-normal tracking-normal;
+}
+
+span{
+  @apply text-sm font-normal tracking-normal;
+}
+
+/**/
+
+*{
+  @layer font-sans;
+}
+
+body{
+  @apply bg-bg-pattern bg-cover bg-no-repeat bg-scroll;
+}
+
+header{
+  @apply w-full flex justify-between px-6 py-4;
+},
+
+header img{
+  @apply h-12;
+}
+
+header ul{
+  @apply flex;
+},
+
+header ul li{
+  @apply flex px-5 py-3;
+}
+
+/*hero樣式*/
+
+.hero{
+  @apply mx-24;
+}
+
+
+
+.benefit-right{
+  @apply w-full h-screen flex justify-center items-center;
+}
+
+.benefit-right-content{
+  @apply w-full h-full mx-20 flex flex-col justify-center items-center;
+}
+
+
+/*服務介紹樣式*/
+
+.service-outline-1{
+  @apply font-Poppins font-semibold text-primary tracking-wide absolute top-0 left-0 text-nowrap bg-white;
+}
+
+.service-outline-2{
+  @apply origin-bottom-left rotate-90 z-40 font-Poppins font-semibold text-primary tracking-wide absolute top-0 left-0 text-nowrap bg-white;
+}
+
+.service-outline-3{
+  @apply origin-bottom-right -rotate-90 z-40 font-Poppins font-semibold text-primary tracking-wide absolute top-0 right-0 text-nowrap bg-white;
+}
+
+.service-outline-4{
+  @apply translate-x-14 font-Poppins font-semibold text-primary tracking-wide absolute bottom-0 left-0 text-nowrap bg-white;
+}
