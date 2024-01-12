@@ -7,7 +7,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'bg-pattern': "url('./src/img/背景.svg')",
+        'bg-pattern': "url('./src/img/background.svg')",
       },
       colors: {
         'primary': '#0052CC',

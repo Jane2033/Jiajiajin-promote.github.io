@@ -98,3 +98,64 @@ header ul li{
 .service-outline-4{
   @apply translate-x-14 font-Poppins font-semibold text-primary tracking-wide absolute bottom-0 left-0 text-nowrap bg-white;
 }
+
+
+
+
+/*產品介紹*/
+
+.myswiper {
+  @apply mx-6 lg:mx-24;
+}
+
+.myswiper-slide{
+  @apply lg:w-1/3;
+}
+
+/*產品介紹 - 上方*/
+.product-item{
+  @apply mt-2;
+}
+
+
+/*產品介紹 - 下方*/
+
+.check-circle{
+  @apply mr-1 text-xl;
+}
+
+.material-items{
+  @apply block;
+}
+
+.material-items-row{
+  @apply block lg:flex items-center;
+}
+
+.material-item{
+  @apply flex items-center mr-3;
+}
+
+.basic-service-items{
+  @apply block lg:flex items-center;
+}
+.basic-service-item{
+  @apply flex items-center mr-3;
+}
+
+.add-on-service-items{
+  @apply block lg:flex items-center;
+}
+.add-on-service-item{
+  @apply flex items-center mr-3;
+}
+
+/*產品介紹 - 外框*/
+
+.product-outline-primary-1{
+  @apply translate-x-1 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
+}
+
+.product-outline-primary-2{
+  @apply origin-bottom-left rotate-90 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
+}
