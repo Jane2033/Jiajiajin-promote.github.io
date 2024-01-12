@@ -44,7 +44,11 @@ span{
 }
 
 body{
-  @apply bg-bg-pattern bg-cover bg-no-repeat bg-fixed;
+  @apply bg-cover bg-no-repeat bg-fixed;
+}
+
+body{
+  background-image: url('./src/img/background.svg');
 }
 
 header{

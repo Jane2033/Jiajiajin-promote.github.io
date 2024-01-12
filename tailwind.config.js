@@ -6,9 +6,6 @@ export default {
       'Poppins': ['Poppins', 'sans-serif'],
     },
     extend: {
-      backgroundImage: {
-        'bg-pattern': "url('./src/img/background.svg')",
-      },
       colors: {
         'primary': '#0052CC',
         'on-surface': '#000A1A',
