@@ -1,13 +1,17 @@
 var swiper = new Swiper(".swiper-content", {
     slidesPerView: 3,
     spaceBetween: 100,
-    loop: true,
+    rewind: true,
     grabCursor: 'true',
     navigation: {
       nextEl: ".myswiper-button-next",
       prevEl: ".myswiper-button-prev",
     },
     breakpoints: {
+        280: {
+          slidesPerView: 1,
+          spaceBetween: 50
+        },
         320: {
           slidesPerView: 1,
           spaceBetween: 50
@@ -18,7 +22,7 @@ var swiper = new Swiper(".swiper-content", {
         },
         768: {
             slidesPerView: 3,
-            spaceBetween: 100
+            spaceBetween: 50
           },
       }
   });

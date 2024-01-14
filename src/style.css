@@ -71,10 +71,20 @@ header ul li{
 /*hero樣式*/
 
 .hero{
-  @apply mx-6 lg:mx-24;
+  @apply h-screen flex mx-6 lg:mx-auto container;
+  animation: showup 1s;
 }
 
+.hero-left{
+  @apply w-full lg:w-1/2 h-full flex flex-col justify-center items-center;
+}
 
+.hero-right{
+  @apply w-full lg:w-1/2 h-full hidden lg:flex justify-center lg:items-center;
+  animation: enter 1s;
+}
+
+/*app介紹*/
 
 .benefit-right{
   @apply w-full h-screen flex justify-center items-center;
@@ -108,21 +118,43 @@ header ul li{
 
 /*產品介紹*/
 
-.myswiper {
-  @apply mx-6 lg:mx-24;
+.swiper-wrapper{
+  @apply flex;
 }
 
-.myswiper-slide{
-  @apply lg:w-1/3;
+.swiper-slide{
+  @apply h-auto;
+}
+
+.slide-card{
+  @apply rounded-2xl border-8 border-black bg-white h-full;
+}
+
+.slide-text{
+  @apply px-4 py-6;
 }
 
 /*產品介紹 - 上方*/
+
+
+.slide-title{
+  @apply flex justify-between items-center;
+}
+
+.product-items{
+  @apply mt-4;
+}
+
 .product-item{
   @apply mt-2;
 }
 
 
 /*產品介紹 - 下方*/
+
+.slide-bottom{
+  @apply mt-4;
+}
 
 .check-circle{
   @apply mr-1 text-xl;
@@ -131,11 +163,9 @@ header ul li{
 .material-items{
   @apply block;
 }
-
 .material-items-row{
   @apply block lg:flex items-center;
 }
-
 .material-item{
   @apply flex items-center mr-3;
 }
@@ -156,10 +186,99 @@ header ul li{
 
 /*產品介紹 - 外框*/
 
+.product-outline-primary{
+  @apply bg-primary absolute -z-30 w-full h-full -translate-y-4 -translate-x-4 rounded-2xl overflow-hidden;
+}
+
 .product-outline-primary-1{
   @apply translate-x-1 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
 }
 
 .product-outline-primary-2{
   @apply origin-bottom-left rotate-90 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
+}
+
+.product-outline-black{
+  @apply bg-black absolute -z-10 w-full h-full translate-y-4 translate-x-4 rounded-2xl;
+}
+
+
+
+
+
+/*動畫*/
+
+.img-left{
+  animation: ani-transX 5s infinite;
+  animation-timing-function: cubic-bezier(.42,0,.58,1);
+}
+
+.img-right{
+  animation: -ani-transX 5s infinite;
+  animation-timing-function: cubic-bezier(.42,0,.58,1);
+}
+
+.img-center{
+  animation: ani-transY 5s infinite;
+  animation-timing-function: cubic-bezier(.42,0,.58,1);
+}
+
+.img-bg{
+  animation: -ani-transY 5s infinite;
+  animation-timing-function: cubic-bezier(.42,0,.58,1);
+}
+
+
+@keyframes ani-transX{
+  0%,100%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(10%);
+  }
+}
+
+@keyframes -ani-transX{
+  0%,100%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes ani-transY{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(5%);
+  }
+}
+
+@keyframes -ani-transY{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-5%);
+  }
+}
+
+@keyframes showup{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:100%;
+  }
+}
+
+@keyframes enter{
+  0%{
+    transform: translateX(10%);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
