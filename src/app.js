@@ -1,8 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 var tl = gsap.timeline({ defaults: { duration: 1, ease: "power1.out"} });
-    tl.from(".shop-name", { x: -100 })
-      .from(".hero-title", { x: -100 }, "<")
+    tl.from(".hero-title", { x: -100 })
       .from(".intro-text", { x: -100 }, "<")
       .from(".cta", { x: -100 }, "<")
       .from(".reservestep",{y: 100}, "<");

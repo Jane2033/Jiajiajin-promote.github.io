@@ -11,9 +11,9 @@ export default {
         'on-surface': '#000A1A',
         'primary-container': '#EBF1FA',
         'secondary': '#FACC15',
-        'secondary-container': '#FAF4DC',
+        'secondary-container': '#fffbeb',
         'tertiary': '#44E3BD',
-        'tertiary-container': '#DFF7F2',
+        'tertiary-container': '#f0fdfa',
       },
       spacing: {
         '150vh': '150vh',

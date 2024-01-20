@@ -1,5 +1,5 @@
 <!Doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./src/img/logoicon.svg" />
@@ -16,9 +16,10 @@
           <img src="./src/img/logo.svg" alt="家家淨清潔坊logo" class="logo">
         </a>
         <nav class="menu-wrapper">
-          <a href="#" class="menu-item">特色</a>
-          <a href="#" class="menu-item">關於家家淨</a>
-          <a href="#" class="menu-item">所有服務</a>
+          <a href="#benefit" class="menu-item hover:text-primary">特色</a>
+          <a href="#about" class="menu-item hover:text-primary">關於家家淨</a>
+          <a href="#products" class="menu-item hover:text-primary">所有服務</a>
+          <a href="#" class="menu-item hover:text-primary">下載App</a>
         </nav>
         <button id="hamburger" class="hamburger">
           <span class="bar"></span>
@@ -27,34 +28,34 @@
     </header>
     <div id="offcanvas" class="offcanvas">
       <nav class="offcanvas-menu-wrapper">
-        <a href="#" class="offcanvas-menu-item">特色</a>
-        <a href="#" class="offcanvas-menu-item">關於家家淨</a>
-        <a href="#" class="offcanvas-menu-item">所有服務</a>
+        <a href="#" class="offcanvas-menu-item hover:text-primary">特色</a>
+        <a href="#" class="offcanvas-menu-item hover:text-primary">關於家家淨</a>
+        <a href="#" class="offcanvas-menu-item hover:text-primary">所有服務</a>
+        <a href="#" class="offcanvas-menu-item hover:text-primary">下載App</a>
       </nav>      
     </div>
-    <div class="hero">
+    <section id="hero" class="hero">
       <div class="hero-left">
         <div class="hero-content w-full flex flex-col items-center lg:items-start">
-          <h5 class="shop-name text-primary text-center">家家淨清潔坊</h5>
-          <h2 class="hero-title text-primary my-6 text-center">你的低敏生活行動管家</h2>
-          <p class="intro-text text-on-surface text-center mx-2 lg:mx-0">立即下載家家淨清潔坊專屬App，簡單三步驟輕鬆預約清潔服務。</p>
+          <h2 class="hero-title text-primary my-6 text-center mx-6 lg:mx-0">你的低敏生活行動管家</h2>
+          <p class="intro-text text-on-surface text-center mx-6 lg:mx-0">立即下載家家淨清潔坊專屬App，簡單三步驟輕鬆預約清潔服務。</p>
           <div class="cta">
             <div class="bg-black w-full h-full rounded-full translate-y-2 translate-x-2 absolute -z-10"></div>
             <button class="cta-btn" onclick="window.location.href='https://getbootstrap.com/docs/5.3/components/offcanvas/';">
-              <h6 class="mr-8">立即下載App</h6>
-              <img class="" src="./src/img/googleplay.svg" alt="前往下載App">
+              <h6 class="m-2">立即下載App</h6>
+              <img class="m-2" src="./src/img/googleplay.svg" alt="前往下載App">
             </button>
           </div>
         </div>
         <div class="reservestep hidden lg:flex justify-end items-center w-full mt-24">
           <div class="choosetime mr-5">
-            <img src="./src/img/choosetime.svg">
+            <img src="./src/img/choosetime.svg" alt="預約步驟一，選擇時間">
           </div>
           <div class="address mr-5">
-            <img src="./src/img/address.svg">
+            <img src="./src/img/address.svg" alt="預約步驟二，填寫地址">
           </div>
           <div class="finish">
-            <img src="./src/img/finish.svg">
+            <img src="./src/img/finish.svg" alt="預約步驟三，完成預約">
           </div>
         </div>
       </div>
@@ -69,8 +70,8 @@
         <img src="./src/img/手機背景圖.svg" class="absolute z-10 img-bg">
         <img src="./src/img/細線.svg" class="img-bg hero-line absolute right-0 hidden lg:flex">
       </div>
-    </div>
-    <div class="decoline-wrapper">
+    </section>
+    <div id="benefit" class="decoline-wrapper">
       <div class="decoline">
         <div class="ticker-text">A CLEAN HOME A HAPPY HEART✦</div>
         <div class="ticker-text">A CLEAN HOME A HAPPY HEART✦</div>
@@ -94,44 +95,41 @@
         <div class="ticker-text">A CLEAN HOME A HAPPY HEART✦</div>
       </div>
     </div>
-    <div class="benefit w-full h-300vh flex">
-      <div class="benefit-left w-1/2 h-screen hidden lg:flex flex-col justify-center items-center bg-primary">
-        <img src="./src/img/app首頁.png" class="h-2/3">
+    <section class="benefit w-full h-300vh flex">
+      <div class="benefit-left w-1/2 h-screen hidden lg:flex flex-col justify-center items-center bg-slate-100">
+        <img src="./src/img/app.svg" class="h-2/3" alt="App示意圖">
       </div>
       <div class="w-full lg:w-1/2">
         <div class="benefit-right benefit-right-1 bg-primary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/行走的人.svg" class="p-4 h-3/5">
+            <img src="./src/img/行走的人.svg" class="p-4 h-3/5" alt="隨時隨地，簡單預約">
             <div>
               <h3 class="lg:my-6">隨時隨地，簡單預約</h3>
               <p class="mt-4">無論身在何處，隨時都能享受方便快捷的預約體驗，輕鬆預約我們的服務。</p>
             </div>
           </div>
-          <img>
         </div>
         <div class="benefit-right benefit-right-2 bg-secondary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/集點優惠.svg" class="p-4 h-3/5">
+            <img src="./src/img/集點優惠.svg" class="p-4 h-3/5" alt="集點拿優惠，預約服務更超值">
             <div>
               <h3 class="lg:my-6">集點拿優惠，預約服務更超值</h3>
               <p class="mt-4">專屬於你的數位會員卡，集點解鎖會員專屬優惠，豐富折扣與好禮等你拿。</p>
             </div>
           </div>
-          <img>
         </div>
         <div class="benefit-right benefit-right-3 bg-tertiary-container">
           <div class="benefit-right-content">
-            <img src="./src/img/預約成功.svg" class="p-4 h-3/5">
+            <img src="./src/img/預約成功.svg" class="p-4 h-3/5" alt="建立清潔計畫，輕鬆對抗塵蟎過敏">
             <div class="">
               <h3 class="lg:my-6">建立清潔計畫，輕鬆對抗塵蟎過敏</h3>
               <p class="mt-4">專業清潔人員定期到府服務，輕鬆改善過敏症狀，讓家人生活更舒適健康。</p>
             </div>
           </div>
-          <img>
         </div>
       </div>
-    </div>
-    <div class="about w-full relative block">
+    </section>
+    <section id="about" class="about w-full relative block">
       <div class="absolute top-0 -z-10 w-full h-1/2">
         <div class="about-video w-full h-full flex justify-center items-start relative">
           <div class="w-full h-full bg-gradient-to-t from-black to-black/0 absolute z-10"></div>
@@ -170,8 +168,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="products w-full">
+    </section>
+    <section id="products" class="products w-full">
       <div class="products-title pt-24 lg:pt-48 mx-6 block lg:flex flex-col items-center">
         <h3>所有服務</h3>
         <p class="my-9">二十四小時線上預約，價格透明合理，專業清潔師傅到府服務，幫你輕鬆打造低敏居家環境。</p>
@@ -181,11 +179,11 @@
           <div class="nav-buttons w-full flex justify-center lg:justify-end">
             <div class="myswiper-button-prev relative m-6 flex justify-center items-center">
               <span class="material-symbols-outlined text-white text-xl absolute z-20">arrow_back</span>
-              <img src="./src/img/上下按鈕.svg" class="">
+              <img src="./src/img/上下按鈕.svg" class="" alt="上一個">
             </div>
             <div class="myswiper-button-next relative m-6 flex justify-center items-center">
               <span class="material-symbols-outlined text-white text-xl absolute z-20">arrow_forward</span>
-              <img src="./src/img/上下按鈕.svg" class="">
+              <img src="./src/img/上下按鈕.svg" class="" alt="下一個">
             </div>
           </div>
           <div class="swiper-wrapper">
@@ -196,7 +194,7 @@
               </div>
               <div class="product-outline-black"></div>
               <div class="slide-card">
-                <img src="./src/img/床墊清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full">
+                <img src="./src/img/床墊清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full" alt="床墊清潔">
                 <div class="slide-text">
                   <div class="slide-top">
                     <div class="slide-title">
@@ -272,7 +270,7 @@
               </div>
               <div class="product-outline-black"></div>
               <div class="slide-card">
-                <img src="./src/img/沙發清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full">
+                <img src="./src/img/沙發清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full" alt="沙發清潔">
                 <div class="slide-text">
                   <div class="slide-top">
                     <div class="slide-title">
@@ -345,7 +343,7 @@
               </div>
               <div class="product-outline-black"></div>
               <div class="slide-card">
-                <img src="./src/img/地毯清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full">
+                <img src="./src/img/地毯清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full" alt="地毯清潔">
                 <div class="slide-text">
                   <div class="slide-top">
                     <div class="slide-title">
@@ -417,7 +415,7 @@
               </div>
               <div class="product-outline-black"></div>
               <div class="slide-card">
-                <img src="./src/img/安全座椅清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full">
+                <img src="./src/img/安全座椅清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full" alt="安全座椅清潔">
                 <div class="slide-text">
                   <div class="slide-top">
                     <div class="slide-title">
@@ -478,7 +476,7 @@
               </div>
               <div class="product-outline-black"></div>
               <div class="slide-card">
-                <img src="./src/img/居家清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full">
+                <img src="./src/img/居家清潔.jpg" class="rounded-tr-lg rounded-tl-lg object-cover w-full" alt="居家清潔">
                 <div class="slide-text">
                   <div class="slide-top">
                     <div class="slide-title">
@@ -554,18 +552,20 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="cta-bottom">
-      <div class="bg-black w-full h-full rounded-full translate-y-5 translate-x-5 absolute -z-10"></div>
-      <button class="cta-bottom-btn" onclick="window.location.href='https://getbootstrap.com/docs/5.3/components/offcanvas/';">
-        <h3 class="mx-12 my-4">立即下載App</h3>
-        <img class="mx-auto my-4 lg:mx-12" src="./src/img/googleplay.svg" alt="前往下載App">
-      </button>        
-    </div>
+    </section>
+    <section id="cta" class="relative w-full my-48">
+      <div class="cta-bottom mx-6">
+        <div class="bg-black w-full h-full rounded-full absolute -z-10 translate-x-4 translate-y-4"></div>
+        <button class="cta-bottom-btn" onclick="window.location.href='https://getbootstrap.com/docs/5.3/components/offcanvas/';">
+          <h3 class="my-2 sm:mx-2">立即下載App</h3>
+          <img class="my-2 sm:mx-2" src="./src/img/googleplay.svg" alt="前往下載App">
+        </button>   
+      </div>     
+    </section>
     <footer class="w-full bg-primary text-white pt-20 pb-9 px-6 lg:px-20">
       <div class="info block lg:flex justify-between items-start">
         <div class="lg:w-1/3">
-          <img src="./src/img/logo-white.svg" alt="家家淨logo" class="w-1/2">
+          <img src="./src/img/logo-white.svg" alt="家家淨logo" class="w-1/2" alt="家家淨清潔坊logo">
         </div>
         <div class="about-us lg:w-1/3 mt-9 lg:mt-0 lg:mx-20">
           <p><strong>聯絡我們</strong></p>
@@ -584,7 +584,7 @@
         </div>
       </div>
       <div class="copyright block lg:flex justify-center items-center lg:mx-20 mt-24">
-        <span class="text-center">家家淨清潔坊 版權所有 © Copyright 2020.All Rights Reserved.</span>
+        <span class="text-center">家家淨清潔坊 版權所有 © Copyright 2024.All Rights Reserved.</span>
       </div>
     </footer>
 
