@@ -269,19 +269,19 @@ body{
 /*服務介紹樣式*/
 
 .service-outline-1{
-  @apply font-Poppins font-semibold text-primary tracking-wide absolute top-0 left-0 text-nowrap bg-white;
+  @apply  absolute top-0 left-0 bg-white;
 }
 
 .service-outline-2{
-  @apply origin-bottom-left rotate-90 z-40 font-Poppins font-semibold text-primary tracking-wide absolute top-0 left-0 text-nowrap bg-white;
+  @apply origin-bottom-left rotate-90 z-40 absolute top-0 left-0 bg-white;
 }
 
 .service-outline-3{
-  @apply origin-bottom-right -rotate-90 z-40 font-Poppins font-semibold text-primary tracking-wide absolute top-0 right-0 text-nowrap bg-white;
+  @apply origin-bottom-right -rotate-90 z-40 absolute top-0 right-0 bg-white;
 }
 
 .service-outline-4{
-  @apply translate-x-14 font-Poppins font-semibold text-primary tracking-wide absolute bottom-0 left-0 text-nowrap bg-white;
+  @apply translate-x-14 absolute bottom-0 left-0 bg-white;
 }
 
 
@@ -362,11 +362,11 @@ body{
 }
 
 .product-outline-primary-1{
-  @apply translate-x-1 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
+  @apply translate-x-1 absolute top-0 left-0 -z-20;
 }
 
 .product-outline-primary-2{
-  @apply origin-bottom-left rotate-90 font-Poppins font-semibold text-primary-container tracking-wide absolute top-0 left-0 -z-20 text-nowrap;
+  @apply origin-bottom-left rotate-90 absolute top-0 left-0 -z-20;
 }
 
 .product-outline-black{
