@@ -33,14 +33,24 @@ var tl = gsap.timeline({ defaults: { duration: 1, ease: "power1.out"} });
         y: 200,
       });
 
-
+/*
 let tl3 = gsap.timeline({
     scrollTrigger: {
       trigger: ".benefit-left",
       pin: true,
       start: "top top",
       endTrigger: ".benefit-right-3",
-      end: "top top",
+      end: "bottom bottom",
       scrub: 1,
     },
   });
+
+
+  let st = ScrollTrigger.create({
+    trigger: ".benefit-left",
+    pin: ".benefit-left",
+    start: "top top",
+    endTrigger: ".benefit-right-3",
+    end: "bottom bottom",
+    scrub: 1,
+  });*/

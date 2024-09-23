@@ -257,6 +257,10 @@ body{
 
 /*app介紹*/
 
+.benefit-left{
+  @apply sticky top-0;
+}
+
 .benefit-right{
   @apply w-full h-screen flex justify-center items-center;
 }
